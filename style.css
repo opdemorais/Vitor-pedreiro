@@ -1,0 +1,115 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7c7f91;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #293906;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 3.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Seção Sobre */
+#sobre {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#sobre h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Cards de Serviços */
+#servicos {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 18px;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Seção Contato */
+#contato {
+    padding: 20px;
+}
+
+#contato button {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contato button:hover {
+    background-color: #618c12;
+
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: rgb(84, 182, 19);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
